@@ -121,10 +121,15 @@ Consider a unit square representing 2-D feature space as shown below, having the
 All the examples outside this unit circle are closer to the corners of the given 2-D space, than to its center. 
 This makes these examples hard to classify as their feature values differ by a huge margin. If most samples fall inside the unit circle, our classification task becomes much simpler. 
 
-As we keep on adding more dimensions, we can think of our unit square becoming a unit cube and eventually a **hypercube**. Following image shows a 2-D unit square, a 3-D unit cube, and an imaginary visualization of an 8-D hypercube with 2^8 = 256 corners.
-![](8d.png)
+As we keep on adding more dimensions, we can think of our unit square becoming a unit cube and eventually a **hypercube**. 
 
 >  **In geometry, a hypercube is an n-dimensional analogue of a square (two dimensions) and a cube (three dimensions)** 
+
+Following image shows a 2-D unit square, a 3-D unit cube, and an imaginary visualization of an 8-D hypercube with 2^8 = 256 corners.
+
+![](8d.png)
+
+
 
 In the 8-D hypercube, roughly 98% of the data is present in its 256 corners. This shows that as the dimensionality of the feature space goes to infinity, the ratio of the difference in minimum and maximum distance from sample point to the center tends to zero. Hence the classification becomes an almost impossible task.
 
