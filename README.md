@@ -27,6 +27,7 @@ Feature space refers to the dimensions where our predictor variables exist. The 
 **1-D Feature Space**
 
 To start with, we will add a single feature to our feature space. Let's pick the "average red color" as our first feature, and try to classify the data using this 1-D feature as shown below: 
+
 ![](1f.png)
 
 So this is clearly not enough as there is some shade of red present for both classes. We can see above that in a 1 dimensional feature space, there is no clear classification boundary that can differentiate cats from dogs.
@@ -82,6 +83,7 @@ However, if we bring down our highly dimensional classification outcome back to 
 Here, we are trying to bring down the results of 3-D feature space classification to the 2-D feature space. We saw that our data was successfully classified in 3-D space, but this classification can not be shown in the 2-D space with a linear classifier. The main reason behind this is that adding new dimensions allows the classifier to perform complicated non-linear classification in order to learn the given 10 instances in great details. So, with the given set of dimensions and number of examples, the classifier will perform well on training data but will fail to generalize for previously unseen data. As we mentioned, considering an infinite number of cats and dogs in the world, our results are very limited, highly over-fitted and the classifier is not suitable for any predictive analysis. 
 
 This over-fitting is due to the curse of dimensionality. The following figure shows the result of a typical linear classifier that operates in a 2-D feature space. 
+
 ![](2dok.png)
 
 Although this is not perfect classification as we had in 3-D feature space, this not-so-perfect classifier will be more __generalizable__ for previously unseen data. In other words, by using less features, the curse of dimensionality can be avoided such that our classifier does not over-fit training data. 
